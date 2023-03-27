@@ -80,13 +80,18 @@ def rand3():
     else:
         print("next time say either rock, paper, or scissors")
 
+def rand4():
+    random4 = random.randint(1,6)
+    random4 = int(random4)
+
 if __name__ == "__main__":
     inval = ""
-    while inval not in ['1','2','3']:
+    while inval not in ['1','2','3','4']:
         print("\n\n\n")
         print("1. guess the number")
         print("2. heads or tails")
         print("3. rock paper scissors")
+        print("4. dnd generator")
         inval = input("Choose an option: ")
     if inval == "1":
         rand1()
@@ -94,3 +99,5 @@ if __name__ == "__main__":
         rand2()
     if inval == "3":
         rand3()
+    if inval == "4":
+        rand4()
