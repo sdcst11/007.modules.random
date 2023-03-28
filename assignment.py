@@ -60,7 +60,7 @@ def rand3():
         if random3 == 1:
             print("i choose... rock! looks like we tied")
         if random3 == 2:
-            print("i choose... paper! looks like i win!")
+            print("i choose... paper! looks like i win!") 
         if random3 == 3:
             print("i choose... scissors! looks like you won")
     elif guess == "paper":
