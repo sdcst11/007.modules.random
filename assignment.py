@@ -4,10 +4,12 @@
 
 import random
 import itertools 
+score = 0
+score = int(score)
 def rand1():
     random1 = random.randint(1,100)
     random1 = float(random1)
-    guess = input("guess the number: ")
+    guess = input("\nguess the new number: ")
     guess = float(guess)
     def repeat():
         guess = input("guess the number: ")
@@ -33,52 +35,69 @@ def rand1():
     
     while True:
         if repeat() == False:
+            rand1()
             break
+        
 
 def rand2():
     random2 = random.randint(1,2)
     random2 = int(random2)
-    guess = input("guess heads or tails: ")
+    guess = input("\nguess heads or tails: ")
     if guess == "heads":
         if random2 == 1:
             print("\nyou got it! it was heads")
+            rand2()
         else:
             print("\nsorry, but it was tails")
+            rand2()
     elif guess == "tails":
         if random2 == 2:
             print("\nyou got it! it was tails")
+            rand2()
         else:
             print("\nsorry, but it was heads")
+            rand2()
     else: 
         print("\nsorry, but next time say either heads or tails")
+        rand2()
 
 def rand3():
     random3 = random.randint(1,3)
     random3 = int(random3)
-    guess = input("rock, paper, or scissors? ")
+    guess = input("\nrock, paper, or scissors? ")
     if guess == "rock":
         if random3 == 1:
             print("i choose... rock! looks like we tied")
+            rand3()
         if random3 == 2:
-            print("i choose... paper! looks like i win!") 
+            print("i choose... paper! looks like i win!")
+            rand3() 
         if random3 == 3:
             print("i choose... scissors! looks like you won")
+            rand3()
     elif guess == "paper":
         if random3 == 1:
             print("i choose... rock! looks like you won")
+            rand3()
         if random3 == 2:
             print("i choose... paper! looks like we tied")
+            rand3()
         if random3 == 3:
             print("i choose... scissors! looks like i win!")
+            rand3()
     elif guess == "scissors":
         if random3 == 1:
             print("i choose... rock! looks i win!")
+            rand3()
         if random3 == 2:
             print("i choose... paper! looks like you won")
+            rand3()
         if random3 == 3:
             print("i choose... scissors! looks like we tied")
+            rand3()
     else:
         print("next time say either rock, paper, or scissors")
+        rand3()
 
 def rand4():
     random4 = random.randint(1,6)
