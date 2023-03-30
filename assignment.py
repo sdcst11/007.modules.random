@@ -100,9 +100,10 @@ def rand3():
         rand3()
 
 def rand4():
-    random4 = random.randint(1,6)
-    random4 = int(random4)
-
+    a = random.randint(1,6)
+    b = random.randint(2,6)
+    a = int(a)
+    b = int(b)
 if __name__ == "__main__":
     inval = ""
     while inval not in ['1','2','3','4']:
