@@ -100,10 +100,54 @@ def rand3():
         rand3()
 
 def rand4():
-    a = random.randint(1,6)
-    b = random.randint(2,6)
-    a = int(a)
-    b = int(b)
+    a1 = random.randint(1,6)
+    b1 = random.randint(1,6)
+    c1 = random.randint(1,6)
+    a1 = int(a1)
+    b1 = int(b1)
+    c1 = int(c1)
+    roll1 = a1 + b1 + c1
+    a2 = random.randint(1,6)
+    b2 = random.randint(1,6)
+    c2 = random.randint(1,6)
+    a2 = int(a2)
+    b2 = int(b2)
+    c2 = int(c2)
+    roll2 = a2 + b2 + c2
+    a3 = random.randint(1,6)
+    b3 = random.randint(1,6)
+    c3 = random.randint(1,6)
+    a3 = int(a3)
+    b3 = int(b3)
+    c3 = int(c3)
+    roll3 = a3 + b3 + c3
+    a4 = random.randint(1,6)
+    b4 = random.randint(1,6)
+    c4 = random.randint(1,6)
+    a4 = int(a4)
+    b4 = int(b4)
+    c4 = int(c4)
+    roll4 = a4 + b4 + c4
+    a5 = random.randint(1,6)
+    b5 = random.randint(1,6)
+    c5 = random.randint(1,6)
+    a5 = int(a5)
+    b5 = int(b5)
+    c5 = int(c5)
+    roll5 = a5 + b5 + c5
+    a6 = random.randint(1,6)
+    b6 = random.randint(1,6)
+    c6 = random.randint(1,6)
+    a6 = int(a6)
+    b6 = int(b6)
+    c6 = int(c6)
+    roll6 = a6 + b6 + c6
+    list = [roll1, roll2, roll3, roll4, roll5, roll6]
+    list.sort()
+    print(list)
+
+
+
 if __name__ == "__main__":
     inval = ""
     while inval not in ['1','2','3','4']:
