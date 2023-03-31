@@ -142,9 +142,35 @@ def rand4():
     b6 = int(b6)
     c6 = int(c6)
     roll6 = a6 + b6 + c6
-    list = [roll1, roll2, roll3, roll4, roll5, roll6]
-    list.sort()
-    print(list)
+    order = [roll1, roll2, roll3, roll4, roll5, roll6]
+    order.sort()
+    print(f"here are the numbers you rolled: {order}")
+    stats = ["strength", "intelligence", "wisdom", "dexterity", "constitution", "charisma"]
+    num1 = order[0]
+    stats1 = input(f"what will you use the smallest number you rolled for? ({num1})? \n {stats}\n:")
+    if stats1 in stats:
+        stats.remove(stats1)
+    num2 = order[1]
+    stats2 = input(f"what will you use the second smallest number you rolled for? ({num2})? \n {stats}\n:")
+    if stats2 in stats:
+        stats.remove(stats2)
+    num3 = order[2]
+    stats3 = input(f"what will you use the third smallest number you rolled for? ({num3})? \n {stats}\n:")
+    if stats3 in stats:
+        stats.remove(stats3)
+    num4 = order[3]
+    stats4 = input(f"what will you use the third biggest number you rolled for? ({num4})? \n {stats}\n:")
+    if stats4 in stats:
+        stats.remove(stats4)
+    num5 = order[4]
+    stats5 = input(f"what will you use the second biggest number you rolled for? ({num5})? \n {stats}\n:")
+    if stats5 in stats:
+        stats.remove(stats5)
+    stats6 = stats[0]
+    num6 = order[5]
+
+    print(f"here are your stats:\n{stats1}: {num1}\n{stats2}: {num2}\n{stats3}: {num3}\n{stats4}: {num4}\n{stats5}: {num5}\n{stats6}: {num6}")
+
 
 
 
