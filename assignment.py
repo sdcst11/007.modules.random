@@ -168,11 +168,7 @@ def rand4():
         stats.remove(stats5)
     stats6 = stats[0]
     num6 = order[5]
-
     print(f"here are your stats:\n{stats1}: {num1}\n{stats2}: {num2}\n{stats3}: {num3}\n{stats4}: {num4}\n{stats5}: {num5}\n{stats6}: {num6}")
-
-
-
 
 if __name__ == "__main__":
     inval = ""
